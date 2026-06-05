@@ -11,7 +11,7 @@
 <body>
     <nav class="primaryNav">
         <img src="img/newLogo.png" alt="famous graphics logo" class="famousbrand">
-        <img src="img/menu-open.png" alt="menu" class="open" id="menuToggle">
+        <img src="img/menu.png" alt="menu" class="open" id="menuToggle">
         <ul class="navLinks">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
@@ -52,7 +52,7 @@
                         <label for="message">Message</label>
                         <textarea id="message" name="message" rows="6" placeholder="Tell us about your project..." required></textarea>
                     </div>
-                    <button type="submit" class="submit-btn">Send Message</button>
+                    <button type="submit" class="submit-btn"><span>Send Message</span></button>
                 </form>
             </div>
 
@@ -63,31 +63,61 @@
                         <div class="info-icon">
                             <img src="img/laptop.svg" alt="Email">
                         </div>
-                        <h3>Email Us</h3>
-                        <a href="mailto:hello@famousgraphics.com">hello@famousgraphics.com</a>
+                        <div class="info-card-content">
+                            <h3>Email Us</h3>
+                            <a href="mailto:hello@famousgraphics.com">hello@famousgraphics.com</a>
+                        </div>
                     </div>
                     <div class="info-card">
                         <div class="info-icon">
                             <img src="img/network-pos.svg" alt="Phone">
                         </div>
-                        <h3>Call Us</h3>
-                        <a href="tel:+233598109267">+233 59 810 9267</a>
+                        <div class="info-card-content">
+                            <h3>Call Us</h3>
+                            <a href="tel:+233598109267">+233 59 810 9267</a>
+                        </div>
                     </div>
                     <div class="info-card">
                         <div class="info-icon">
                             <img src="img/seal-variant.svg" alt="Location">
                         </div>
-                        <h3>Location</h3>
-                        <p>Accra, Ghana</p>
+                        <div class="info-card-content">
+                            <h3>Location</h3>
+                            <p>Accra, Ghana</p>
+                        </div>
                     </div>
                     <div class="info-card">
                         <div class="info-icon">
                             <img src="img/shield-check-outline.svg" alt="Hours">
                         </div>
-                        <h3>Working Hours</h3>
-                        <p>Mon - Sat: 8AM - 6PM</p>
+                        <div class="info-card-content">
+                            <h3>Working Hours</h3>
+                            <p>Mon - Sat: 8AM - 6PM</p>
+                        </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="map-section">
+        <div class="map-container">
+            <div class="map-header">
+                <span class="map-badge">Visit Us</span>
+                <h2>Find <span>Our Studio</span></h2>
+                <p>Located at Achimota Alogboshie, Accra — we're ready to bring your vision to life.</p>
+            </div>
+            <div class="map-wrapper">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.5!2d-0.2474!3d5.6311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sAchimota%20Alogboshie%2C%20Accra!5e0!3m2!1sen!2s!4v1"
+                    width="100%"
+                    height="100%"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Famous Graphics Location"
+                ></iframe>
             </div>
         </div>
     </section>

@@ -196,13 +196,13 @@ if (menuToggle && navLinks) {
   menuToggle.addEventListener("click", function () {
     navLinks.classList.toggle("active");
     const isOpen = navLinks.classList.contains("active");
-    menuToggle.src = isOpen ? "img/menu.png" : "img/menu-open.png";
+    menuToggle.src = isOpen ? "img/menu-open.png" : "img/menu.png";
   });
 
   navLinks.querySelectorAll("a").forEach((link) => {
     link.addEventListener("click", () => {
       navLinks.classList.remove("active");
-      menuToggle.src = "img/menu-open.png";
+      menuToggle.src = "img/menu.png";
     });
   });
 }
