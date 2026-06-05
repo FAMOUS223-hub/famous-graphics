@@ -1,0 +1,241 @@
+body{
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+header{
+    background-image: url(../img/img1.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: overlay;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-attachment: fixed;
+    margin-bottom: 2rem;
+}
+#headerInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 800px;
+    padding: 2rem;
+}
+section .welcome{
+    background-color: rgba(201, 180, 88, 0.2);
+    color: #c9b458;
+    padding: 0.8rem 2rem;
+    font-size: 1.4rem;
+    border-radius: 5rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 2rem;
+    display: inline-block;
+}
+#headerInfo h1{
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+}
+
+#headerInfo span{
+    color: #c9b458;
+}
+
+.btns{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+.btns a{
+    background-color: #fff;
+    padding: 1.2rem 3rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #333;
+    border-radius: 50rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(201, 180, 88, 0.2);
+}
+
+.btns a:hover{
+    background-color: #c9b458;
+    color: white;
+    box-shadow: 0 8px 25px rgba(201, 180, 88, 0.5);
+    transform: translateY(-3px);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 6rem 2rem;
+}
+.container h2{
+    font-size: 3.5rem;
+    margin-bottom: 4rem;
+    color: #333;
+    position: relative;
+}
+
+.container h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #c9b458;
+}
+
+.myContainers{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    max-width: 1200px;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: #fff;
+    padding: 3rem;
+    border-radius: 1.5rem;
+    flex: 1 1 300px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.card img{
+    height: 6rem;
+    background-color: rgba(201, 180, 88, 0.1);
+    border-radius: 50%;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+.card h3{
+    font-size: 2.2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+.card p{
+    font-size: 1.5rem;
+    color: #666;
+}
+.client{
+    min-height: 40vh;
+    padding: 6rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-image: url(../img/img3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-blend-mode: overlay;
+    color: #fff;  
+    text-align: center;
+}
+.clientsReached{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+    max-width: 1200px;
+}
+.clientCard{
+    text-align: center;
+}
+.clientCard h2{
+    font-size: 4.5rem;
+    color: #c9b458;
+    margin-bottom: 0.5rem;
+}
+.clientCard p{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.8;
+}
+.accord{
+    padding: 8rem 2rem;
+    background-color: #fff;
+}
+
+.accord h1 {
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.accordion {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.accordion-item {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.accordion-item:last-child {
+    border-bottom: none;
+}
+
+.accordion-question {
+    background: #fff;
+    color: #333;
+    padding: 2rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-question:hover {
+    background: #fafafa;
+    color: #c9b458;
+}
+
+.accordion-answer {
+    display: none;
+    padding: 2rem;
+    background: #fdfdfd;
+    color: #666;
+    font-size: 1.5rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.02);
+}
+
+.accordion-answer.show {
+    display: block;
+    animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}

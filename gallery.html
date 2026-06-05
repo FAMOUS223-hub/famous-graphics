@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | FAMOUS GRAPHICS</title>
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/gallery.css">
+</head>
+<body>
+    <nav class="primaryNav">
+        <img src="img/newLogo.png" alt="famous graphics logo" class="famousbrand">
+        <img src="img/menu-open.png" alt="menu" class="open" id="menuToggle">
+        <ul class="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html" class="active">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section class="gallery-hero">
+        <div class="gallery-hero-content">
+            <span class="gallery-badge">Our Work</span>
+            <h1>Visual <span>Showcase</span></h1>
+            <p>A curated collection of our finest designs — each project tells a unique story.</p>
+        </div>
+    </section>
+
+    <section class="gallery-section">
+        <div class="gallery-header">
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="logos">Logos</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+                <button class="filter-btn" data-filter="social">Social Media</button>
+                <button class="filter-btn" data-filter="print">Print</button>
+            </div>
+        </div>
+
+        <div class="gallery-grid" id="galleryGrid">
+            <div class="gallery-item" data-category="logos">
+                <div class="gallery-card" data-modal="eagleTransport">
+                    <div class="gallery-preview gallery-preview-eagle">
+                        <div class="preview-overlay"></div>
+                    </div>
+                    <div class="gallery-info">
+                        <span class="gallery-tag">Logo Design</span>
+                        <h3>Eagle Transport</h3>
+                        <p>Logistics brand identity</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="branding">
+                <div class="gallery-card" data-modal="meridianHealth">
+                    <div class="gallery-preview gallery-preview-meridian">
+                        <div class="preview-overlay"></div>
+                    </div>
+                    <div class="gallery-info">
+                        <span class="gallery-tag">Brand Identity</span>
+                        <h3>Meridian Health</h3>
+                        <p>Healthcare brand system</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="social">
+                <div class="gallery-card" data-modal="urbanThreads">
+                    <div class="gallery-preview gallery-preview-urban">
+                        <div class="preview-overlay"></div>
+                    </div>
+                    <div class="gallery-info">
+                        <span class="gallery-tag">Social Media</span>
+                        <h3>Urban Threads</h3>
+                        <p>Instagram campaign</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="print">
+                <div class="gallery-card" data-modal="primeProperties">
+                    <div class="gallery-preview gallery-preview-prime">
+                        <div class="preview-overlay"></div>
+                    </div>
+                    <div class="gallery-info">
+                        <span class="gallery-tag">Print Design</span>
+                        <h3>Prime Properties</h3>
+                        <p>Brochure & flyer set</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="logos">
+                <div class="gallery-card" data-modal="apexConsulting">
+                    <div class="gallery-preview gallery-preview-apex">
+                        <div class="preview-overlay"></div>
+                    </div>
+                    <div class="gallery-info">
+                        <span class="gallery-tag">Logo Design</span>
+                        <h3>Apex Consulting</h3>
+                        <p>Professional logo mark</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="branding">
+                <div class="gallery-card" data-modal="novaTech">
+                    <div class="gallery-preview gallery-preview-nova">
+                        <div class="preview-overlay"></div>
+                    </div>
+                    <div class="gallery-info">
+                        <span class="gallery-tag">Brand Identity</span>
+                        <h3>Nova Tech</h3>
+                        <p>Tech startup branding</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="social">
+                <div class="gallery-card" data-modal="bloomBeauty">
+                    <div class="gallery-preview gallery-preview-bloom">
+                        <div class="preview-overlay"></div>
+                    </div>
+                    <div class="gallery-info">
+                        <span class="gallery-tag">Social Media</span>
+                        <h3>Bloom Beauty</h3>
+                        <p>Content calendar</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="print">
+                <div class="gallery-card" data-modal="grandOpening">
+                    <div class="gallery-preview gallery-preview-grand">
+                        <div class="preview-overlay"></div>
+                    </div>
+                    <div class="gallery-info">
+                        <span class="gallery-tag">Print Design</span>
+                        <h3>Grand Opening</h3>
+                        <p>Event invitation suite</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <div class="testimonials-header">
+            <span class="section-eyebrow">Client Feedback</span>
+            <h2>What Our <span>Clients Say</span></h2>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-text">"Famous Graphics transformed our brand identity completely. The attention to detail and creative vision exceeded our expectations. Highly recommended!"</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar avatar-samuel">SK</div>
+                    <div>
+                        <h4>Samuel K.</h4>
+                        <span>CEO, Meridian Health</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card featured">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-text">"Working with Famous was an incredible experience. He understood our vision from day one and delivered designs that perfectly captured our brand's essence."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar avatar-abena">AM</div>
+                    <div>
+                        <h4>Abena M.</h4>
+                        <span>Founder, Urban Threads</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-text">"The print materials Famous Graphics designed for our real estate launch were absolutely stunning. Quality and professionalism at the highest level."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar avatar-kwame">KP</div>
+                    <div>
+                        <h4>Kwame P.</h4>
+                        <span>Director, Prime Properties</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery-cta">
+        <div class="gallery-cta-content">
+            <h2>Ready to Create <span>Your Masterpiece</span>?</h2>
+            <p>Let's collaborate and bring your vision to life with exceptional design.</p>
+            <a href="contact.html" class="gallery-cta-btn">Start Your Project</a>
+        </div>
+    </section>
+
+    <footer>
+        <section class="footerInfo">
+            <div class="items">
+                <a href="index.html" class="brand">Famous Graphics</a>
+                <p>Elevating brands through exceptional visual design and top-tier creative solutions.</p>
+            </div>
+            <div class="navItems">
+                <p class="heads">Quick Links</p>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="services">
+                <p class="heads">Services</p>
+                <ul>
+                    <li><a href="services.html">Logo Design</a></li>
+                    <li><a href="services.html">Design Printing</a></li>
+                    <li><a href="services.html">Social Media</a></li>
+                    <li><a href="services.html">Flyers & More</a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <p class="heads">Get In Touch</p>
+                <div class="contact-icons">
+                    <a href="https://github.com/FAMOUS223-hub" target="_blank" rel="noopener"><img src="img/github-142-svgrepo-com.svg" alt="GitHub"></a>
+                    <a href="https://www.instagram.com/famous_graphics0/" target="_blank" rel="noopener"><img src="img/instagram-1-svgrepo-com.svg" alt="Instagram"></a>
+                    <a href="https://www.snapchat.com/add/king_famous235" target="_blank" rel="noopener"><img src="img/snapchat-svgrepo-com.svg" alt="Snapchat"></a>
+                    <a href="https://wa.me/+233598109267" target="_blank" rel="noopener"><img src="img/whatsapp-128-svgrepo-com.svg" alt="WhatsApp"></a>
+                </div>
+            </div>
+        </section> 
+        <div class="footer-divider"></div>
+        <p class="made">  &copy; <span id="copyRight"></span> | Made with 💙 by Famous Graphics</p>
+    </footer>
+
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal" id="modal">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div class="modal-content" id="modalContent"></div>
+        </div>
+    </div>
+
+    <div class="lightbox-overlay" id="lightboxOverlay">
+        <button class="lightbox-close" id="lightboxClose">&times;</button>
+        <div class="lightbox-container">
+            <img src="" alt="Full size preview" class="lightbox-img" id="lightboxImg">
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

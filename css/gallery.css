@@ -1,0 +1,578 @@
+/* ─── Hero ─── */
+.gallery-hero {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0a0a0a 100%);
+    color: white;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 30% 50%, rgba(201, 180, 88, 0.08) 0%, transparent 60%),
+                radial-gradient(ellipse at 70% 20%, rgba(255, 255, 255, 0.03) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.gallery-hero-content {
+    max-width: 70rem;
+    position: relative;
+    z-index: 1;
+}
+
+.gallery-badge {
+    display: inline-block;
+    padding: 0.8rem 2.4rem;
+    background: rgba(201, 180, 88, 0.15);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    border-radius: 10rem;
+    font-size: 1.3rem;
+    border: 1px solid rgba(201, 180, 88, 0.25);
+    color: #f5e6a3;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+    margin-bottom: 2.5rem;
+}
+
+.gallery-hero h1 {
+    font-size: 7rem;
+    font-weight: 700;
+    letter-spacing: -2px;
+    line-height: 1.05;
+    margin-bottom: 1.5rem;
+}
+
+.gallery-hero h1 span {
+    background: linear-gradient(135deg, #c9b458, #f5e6a3, #c9b458);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.gallery-hero p {
+    font-size: 1.8rem;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.6;
+    max-width: 55rem;
+    margin: 0 auto;
+}
+
+/* ─── Gallery Section ─── */
+.gallery-section {
+    padding: 8rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.gallery-filters {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #f5f5f7;
+    padding: 0.6rem;
+    border-radius: 12px;
+}
+
+.filter-btn {
+    padding: 1rem 2.4rem;
+    border: none;
+    background: transparent;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #666;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-family: inherit;
+    letter-spacing: 0.3px;
+}
+
+.filter-btn:hover {
+    color: #1a1a1a;
+}
+
+.filter-btn.active {
+    background: #fff;
+    color: #1a1a1a;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    font-weight: 600;
+}
+
+/* ─── Gallery Grid ─── */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(32rem, 1fr));
+    gap: 2.5rem;
+}
+
+.gallery-item {
+    opacity: 1;
+    transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.gallery-item.hidden {
+    opacity: 0;
+    transform: scale(0.95);
+    position: absolute;
+    pointer-events: none;
+}
+
+.gallery-card {
+    border-radius: 1.8rem;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    position: relative;
+}
+
+.gallery-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+}
+
+.gallery-preview {
+    height: 24rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: all 0.4s ease;
+}
+
+.gallery-card:hover .gallery-preview {
+    transform: scale(1.02);
+}
+
+.preview-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.3) 100%);
+    transition: all 0.4s ease;
+}
+
+.gallery-card:hover .preview-overlay {
+    background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.gallery-info {
+    padding: 2.5rem;
+    background: #0a0a0a;
+}
+
+.gallery-tag {
+    display: inline-block;
+    padding: 0.4rem 1.2rem;
+    background: rgba(201, 180, 88, 0.15);
+    color: #c9b458;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 10rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+.gallery-info h3 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+}
+
+.gallery-info p {
+    font-size: 1.4rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* ─── Testimonials ─── */
+.testimonials-section {
+    padding: 10rem 2rem;
+    background: #f5f5f7;
+}
+
+.testimonials-header {
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+.section-eyebrow {
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #c9b458;
+    margin-bottom: 1.5rem;
+}
+
+.testimonials-header h2 {
+    font-size: 4.5rem;
+    color: #1a1a1a;
+    letter-spacing: -1px;
+}
+
+.testimonials-header h2 span {
+    background: linear-gradient(135deg, #c9b458, #b8960f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.testimonial-card {
+    background: #fff;
+    padding: 4rem 3rem;
+    border-radius: 2rem;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.testimonial-card.featured {
+    background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+    border-color: rgba(201, 180, 88, 0.15);
+}
+
+.testimonial-card.featured .testimonial-text {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.testimonial-card.featured .testimonial-author h4 {
+    color: #fff;
+}
+
+.testimonial-card.featured .testimonial-author span {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.testimonial-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.06);
+}
+
+.testimonial-stars {
+    font-size: 1.6rem;
+    color: #c9b458;
+    margin-bottom: 2rem;
+    letter-spacing: 2px;
+}
+
+.testimonial-text {
+    font-size: 1.6rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 2.5rem;
+    font-style: italic;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.author-avatar {
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #fff;
+    flex-shrink: 0;
+}
+
+.testimonial-author h4 {
+    font-size: 1.5rem;
+    color: #1a1a1a;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+}
+
+.testimonial-author span {
+    font-size: 1.3rem;
+    color: #999;
+}
+
+/* ─── CTA ─── */
+.gallery-cta {
+    padding: 10rem 2rem;
+    background: #0a0a0a;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-cta::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 50% 50%, rgba(201, 180, 88, 0.06) 0%, transparent 60%);
+    pointer-events: none;
+}
+
+.gallery-cta-content {
+    position: relative;
+    z-index: 1;
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+.gallery-cta-content h2 {
+    font-size: 4.5rem;
+    color: #fff;
+    margin-bottom: 2rem;
+    letter-spacing: -1px;
+}
+
+.gallery-cta-content h2 span {
+    background: linear-gradient(135deg, #c9b458, #f5e6a3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.gallery-cta-content p {
+    font-size: 1.8rem;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.7;
+    margin-bottom: 3.5rem;
+}
+
+.gallery-cta-btn {
+    display: inline-block;
+    padding: 1.6rem 4rem;
+    background: linear-gradient(135deg, #c9b458, #b8960f);
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 700;
+    border-radius: 50rem;
+    text-decoration: none;
+    transition: all 0.35s ease;
+    letter-spacing: 0.5px;
+    box-shadow: 0 8px 30px rgba(201, 180, 88, 0.3);
+}
+
+.gallery-cta-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(201, 180, 88, 0.4);
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 1024px) {
+    .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery-hero h1 {
+        font-size: 4.5rem;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .gallery-preview {
+        height: 20rem;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonials-header h2 {
+        font-size: 3.2rem;
+    }
+
+    .gallery-cta-content h2 {
+        font-size: 3.2rem;
+    }
+}
+
+/* ─── Gallery Preview Images ─── */
+.gallery-preview-eagle { background-image: url('../img/designimgs/LOGOUT.jpg'); }
+.gallery-preview-meridian { background-image: url('../img/designimgs/CHRUCH.jpg'); }
+.gallery-preview-urban { background-image: url('../img/designimgs/ZACK SUIT PIC.png'); }
+.gallery-preview-prime { background-image: url('../img/designimgs/MENORAH CORP.jpg'); }
+.gallery-preview-apex { background-image: url('../img/designimgs/NEW LOGO.png'); }
+.gallery-preview-nova { background-image: url('../img/designimgs/MY TECH CV.jpg'); }
+.gallery-preview-bloom { background-image: url('../img/designimgs/MARLIAN66.jpg'); }
+.gallery-preview-grand { background-image: url('../img/designimgs/ANNOINTED VESSELS.jpg'); }
+
+/* ─── Avatar Backgrounds ─── */
+.avatar-samuel { background: linear-gradient(135deg, #c9b458, #f5e6a3); }
+.avatar-abena { background: linear-gradient(135deg, #1a1a1a, #333); color: #c9b458; }
+.avatar-kwame { background: linear-gradient(135deg, #c9b458, #b8960f); }
+
+/* ─── Project Modal Gallery ─── */
+.project-hero {
+    border-radius: 1.2rem;
+    overflow: hidden;
+    cursor: pointer;
+    margin-bottom: 2.5rem;
+    position: relative;
+}
+
+.project-hero::after {
+    content: '\26F6';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: rgba(255,255,255,0.6);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-hero:hover::after {
+    opacity: 1;
+}
+
+.project-hero img {
+    width: 100%;
+    height: 26rem;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.project-hero:hover img {
+    transform: scale(1.03);
+}
+
+.project-gallery {
+    margin: 3rem 0;
+}
+
+.project-gallery-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
+}
+
+.project-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+}
+
+.project-gallery-item {
+    border-radius: 1rem;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+
+.project-gallery-item::after {
+    content: '+';
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: #fff;
+    background: rgba(0,0,0,0.3);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-gallery-item:hover::after {
+    opacity: 1;
+}
+
+.project-gallery-item img {
+    width: 100%;
+    height: 14rem;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.project-gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+/* ─── Lightbox ─── */
+.lightbox-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.92);
+    z-index: 3000;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+}
+
+.lightbox-overlay.active {
+    display: flex;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    background: none;
+    border: none;
+    font-size: 4rem;
+    color: rgba(255,255,255,0.6);
+    cursor: pointer;
+    transition: color 0.3s ease;
+    z-index: 3001;
+    line-height: 1;
+    padding: 1rem;
+}
+
+.lightbox-close:hover {
+    color: #fff;
+}
+
+.lightbox-container {
+    max-width: 90vw;
+    max-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox-img {
+    max-width: 100%;
+    max-height: 85vh;
+    object-fit: contain;
+    border-radius: 1.2rem;
+    box-shadow: 0 30px 80px rgba(0,0,0,0.5);
+}

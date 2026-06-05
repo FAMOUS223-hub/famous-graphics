@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | FAMOUS GRAPHICS</title>
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <nav class="primaryNav">
+        <img src="img/newLogo.png" alt="famous graphics logo" class="famousbrand">
+        <img src="img/menu-open.png" alt="menu" class="open" id="menuToggle">
+        <ul class="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html" class="active">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section class="contact-hero">
+        <div class="contact-hero-content">
+            <span class="contact-badge">Get In Touch</span>
+            <h1>Let's <span>Create Together</span></h1>
+            <p>Have a project in mind? We'd love to hear about it. Reach out and let's make something extraordinary.</p>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="contact-grid">
+            <div class="contact-form-wrapper">
+                <h2>Send Us a Message</h2>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="How can we help you?" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" placeholder="Tell us about your project..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+
+            <div class="contact-info-wrapper">
+                <h2>Contact Information</h2>
+                <div class="info-cards">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <img src="img/laptop.svg" alt="Email">
+                        </div>
+                        <h3>Email Us</h3>
+                        <a href="mailto:hello@famousgraphics.com">hello@famousgraphics.com</a>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <img src="img/network-pos.svg" alt="Phone">
+                        </div>
+                        <h3>Call Us</h3>
+                        <a href="tel:+233598109267">+233 59 810 9267</a>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <img src="img/seal-variant.svg" alt="Location">
+                        </div>
+                        <h3>Location</h3>
+                        <p>Accra, Ghana</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <img src="img/shield-check-outline.svg" alt="Hours">
+                        </div>
+                        <h3>Working Hours</h3>
+                        <p>Mon - Sat: 8AM - 6PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <section class="footerInfo">
+            <div class="items">
+                <a href="index.html" class="brand">Famous Graphics</a>
+                <p>Elevating brands through exceptional visual design and top-tier creative solutions.</p>
+            </div>
+            <div class="navItems">
+                <p class="heads">Quick Links</p>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="services">
+                <p class="heads">Services</p>
+                <ul>
+                    <li><a href="services.html">Logo Design</a></li>
+                    <li><a href="services.html">Design Printing</a></li>
+                    <li><a href="services.html">Social Media</a></li>
+                    <li><a href="services.html">Flyers & More</a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <p class="heads">Get In Touch</p>
+                <div class="contact-icons">
+                    <a href="https://github.com/FAMOUS223-hub" target="_blank" rel="noopener"><img src="img/github-142-svgrepo-com.svg" alt="GitHub"></a>
+                    <a href="https://www.instagram.com/famous_graphics0/" target="_blank" rel="noopener"><img src="img/instagram-1-svgrepo-com.svg" alt="Instagram"></a>
+                    <a href="https://www.snapchat.com/add/king_famous235" target="_blank" rel="noopener"><img src="img/snapchat-svgrepo-com.svg" alt="Snapchat"></a>
+                    <a href="https://wa.me/+233598109267" target="_blank" rel="noopener"><img src="img/whatsapp-128-svgrepo-com.svg" alt="WhatsApp"></a>
+                </div>
+            </div>
+        </section> 
+        <div class="footer-divider"></div>
+        <p class="made">  &copy; <span id="copyRight"></span> | Made with 💙 by Famous Graphics</p>
+    </footer>
+
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal" id="modal">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div class="modal-content" id="modalContent"></div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
